@@ -32,7 +32,7 @@ func NewClient(config bca.Config) Client {
 //GetBalanceInfo is used to get account balance information using account number(s)
 func (c Client) GetInquiry(ctx context.Context, accountNumber string) ([]byte, error) {
 	var response []byte
-	path := fmt.Sprintf("/va/payments?CompanyCode=%s&CustomerNumber=%s", c.CompanyCode, accountNumbers)
+	path := fmt.Sprintf("/va/payments?CompanyCode=%s&CustomerNumber=%s", c.CompanyCode, accountNumber)
 	if err := c.Client.Call("GET", path, c.AccessToken, bytes.NewBufferString(""), &response); err != nil {
 		return response, err
 	}
