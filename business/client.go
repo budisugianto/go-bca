@@ -17,6 +17,7 @@ type Client struct {
 	Client      bca.ClientImplementation
 	CorporateID string
 	AccessToken string
+	CompanyCode string
 }
 
 //NewClient is used to initialize new business.Client
@@ -24,6 +25,7 @@ func NewClient(config bca.Config) Client {
 	return Client{
 		CorporateID: config.CorporateID,
 		Client:      bca.NewClient(config),
+		CompanyCode: config.CompanyCode,
 	}
 }
 
