@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	bca "github.com/budisugianto/go-bca/bca"
+	"github.com/budisugianto/go-bca/bca"
 )
 
 //Client is used to invoke BCA Business Banking API
