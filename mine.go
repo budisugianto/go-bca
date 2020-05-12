@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	bca "."
 	"github.com/budisugianto/go-bca/auth"
+	bca "github.com/budisugianto/go-bca/bca"
 	"github.com/budisugianto/go-bca/business"
 )
 

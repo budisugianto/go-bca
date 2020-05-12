@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strings"
 
-	bca "github.com/budisugianto/go-bca"
+	bca "github.com/budisugianto/go-bca/bca"
 )
 
 //Client is used to invoke BCA OAuth 2.0 API
